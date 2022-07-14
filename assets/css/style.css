@@ -4,6 +4,7 @@
     --line-break: rgb(64, 64, 64);
     --dark: rgb(56, 50, 50);
 }
+
 body{
     background-color: rgb(239, 239, 239);
     font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +20,7 @@ header{
     padding: 10px 0px 10px 0px;
 }
 
-
+/*Styling for the name*/
 #name{
     display: inline-block;
     background-color: var(--light);
@@ -28,6 +29,7 @@ header{
 
 }
 
+/*positioning for the navigation bar*/
 nav{
     padding-top: 15px;
     margin-right: 20px;
@@ -35,18 +37,22 @@ nav{
     font-size: 20px;
 }
 
+/*Removes the bullet points for the list*/
 ul {
     list-style-type: none;
 }
 
+/*repositions the */
 ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a{
+/*Changes the color of the navagation text*/
+ul.navcolor a{
     color: var(--light); 
 }
+
 
 /*Background image*/
 .background{
@@ -60,6 +66,7 @@ a{
     position: relative;
 }
 
+/*positioning and styling for the subtitle box*/
 div.background h2{
     background-color: var(--light);
     color: var(--dark);
@@ -87,6 +94,7 @@ main section{
     margin-bottom: 20px;
 }
 
+/*Styling and positioning for the section titles*/
 section h1{
     display: inline-block;
     color: rgb(75, 75, 75);
@@ -103,7 +111,7 @@ p{
     line-height: 1.5;
 }
 
-/*Work Section*/
+/*---Work Section---*/
 section.work{
     margin-bottom: 16px;
 }
@@ -122,6 +130,11 @@ figure{
     position: relative;
     border: var(--light) solid;
     border-width: medium;
+}
+
+/*Yellow border appears when the cursor is hovered over the application*/
+figure:hover{
+    border-color: yellow;
 }
 
 /*Image styling for the first application*/
@@ -161,16 +174,18 @@ div.projects{
     justify-content: space-between;
 }
 
+/*Sizing and spacing for each individual application in the work section*/
 div.projects figure{
     width:48.7%;
     margin: 3px 3px 15px 0px;
 }
 
-/*Contact Section*/
+/*---Contact Section---*/
 section.contact{
     margin-bottom: 16px;
 }
 
+/*Styling and spacing for the contact section*/
 div.personal-info{
     border-left: 2px solid var(--line-break);
     padding-left: 20px;
@@ -178,16 +193,18 @@ div.personal-info{
     border-width: medium;
 }
 
+/*Styling for the links*/
 div.personal-info a{
     color:rgb(58, 58, 58);
     text-align: center;
 }
-
+/*Spacing for the different links*/
 div.personal-info ul{
     display: flex;
     justify-content: space-evenly;
 }
 
+/*Adjusts how the work section is displayed when the screen size is 992px or less*/
 @media screen and (max-width: 992px) {
     div.projects figure {
         width: 100%;

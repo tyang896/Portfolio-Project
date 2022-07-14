@@ -6,7 +6,7 @@
 }
 body{
     background-color: rgb(239, 239, 239);
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*
@@ -188,7 +188,7 @@ div.personal-info ul{
     justify-content: space-evenly;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     div.projects figure {
         width: 100%;
     }
@@ -196,6 +196,5 @@ div.personal-info ul{
     img.projectOne{
         height: 300px;
     }
-  
 }
 

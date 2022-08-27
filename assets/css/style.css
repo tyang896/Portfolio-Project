@@ -1,8 +1,8 @@
 :root{
     --header-color: rgb(122, 138, 174);
-    --light: rgb(103, 235, 200);
+    --light: white;
     --line-break: rgb(64, 64, 64);
-    --dark: rgb(56, 50, 50);
+    --dark: rgb(15 54 69);
 }
 
 body{
@@ -51,6 +51,11 @@ ul li {
 /*Changes the color of the navagation text*/
 ul.navcolor a{
     color: var(--light); 
+    text-decoration: none;
+}
+
+ul.navcolor a:hover{
+    color: rgb(190, 190, 190);
 }
 
 
@@ -103,7 +108,7 @@ section h1{
     width: 50px;
 }
 
-p{
+section.aboutme p{
     border-left: 2px solid var(--line-break);
     padding-left: 20px;
     border-width: medium;
@@ -132,9 +137,14 @@ figure{
     border-width: medium;
 }
 
-/*Yellow border appears when the cursor is hovered over the application*/
-figure:hover{
-    border-color: yellow;
+img:hover{
+    filter: brightness(125%);
+    transition: 0.6s;
+}
+
+span.programs{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:x-small;
 }
 
 /*Image styling for the first application*/
@@ -195,8 +205,12 @@ div.personal-info{
 
 /*Styling for the links*/
 div.personal-info a{
-    color:rgb(58, 58, 58);
+    color: black;
     text-align: center;
+}
+
+div.personal-info a:hover{
+    color: gray;
 }
 /*Spacing for the different links*/
 div.personal-info ul{

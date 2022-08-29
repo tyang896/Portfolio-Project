@@ -61,20 +61,35 @@ ul.navcolor a:hover{
 
 /*Background image*/
 .background{
+    position: relative;
     height: 400px;
     width: 100%;
     margin-bottom: 25px;
+    background-image: url("../images/pexels-pixabay-235994.jpg");
     background-color: white;/*Displays a blank white image if the picture does not appear*/
-    background-image: url("../images/IMG_6790.JPG");
     background-size: cover;
     background-position: center;
-    position: relative;
+}
+
+#profile-pic{
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+    border: var(--dark) solid 5px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    background-image: url(../images/IMG_6790.JPG);
+    background-color: white;
+    background-size: cover;
+    background-position: 60%; 
 }
 
 /*positioning and styling for the subtitle box*/
 div.background h2{
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--light);
     padding: 8px;
     position: absolute;
     bottom: 20px;
@@ -119,15 +134,23 @@ section.aboutme p{
 /*---Work Section---*/
 section.work{
     margin-bottom: 16px;
+    background-color: var(--dark);
+    padding: 4% 0%;
+}
+
+#work{
+    color: white;
 }
 
 .container-column{
     display:flex;
     flex-direction: column;
     border-left: 2px solid var(--line-break);
+    border-color: white;
     border-width: medium;
     padding-left: 20px;
     width: 100%;
+    margin-right: 5%;
 }
 
 figure{
@@ -199,6 +222,7 @@ section.contact{
 div.personal-info{
     border-left: 2px solid var(--line-break);
     padding-left: 20px;
+    padding-top: 1.5%;
     width: 100%;
     border-width: medium;
 }

@@ -16,6 +16,9 @@ Header and Navigation
 ----------------------------------------
 */
 header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     background-color: var(--dark);
     padding: 10px 0px 10px 0px;
 }
@@ -69,12 +72,13 @@ ul.navcolor a:hover{
     background-color: white;/*Displays a blank white image if the picture does not appear*/
     background-size: cover;
     background-position: center;
+    background-attachment:fixed;
 }
 
 #profile-pic{
     position: absolute;
     left: 35%;
-    bottom: 10%;
+    bottom: 0%;
     border: var(--dark) solid 5px;
     width: 300px;
     height: 300px;
@@ -124,6 +128,7 @@ section h1{
 }
 
 section.aboutme p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-left: 2px solid var(--line-break);
     padding-left: 20px;
     border-width: medium;

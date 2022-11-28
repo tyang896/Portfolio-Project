@@ -20,6 +20,6 @@ git clone git@github.com:tyang896/Portfolio.git
 
 ![A screenshot of my portfolio website](assets/images/Screenshot%202022-07-18%20at%2022-48-42%20Talee%20Yang%20Portfolio%20Homepage.png)
 
-2. To view a live demonstration of the webpage, you can view it here: https://tyang896.github.io/Portfolio/
+2. To view a live demonstration of the webpage, you can view it here: https://tyang896.github.io/Portfolio-Project/
    
 
